@@ -33,13 +33,25 @@ import cv2
 
 
 # Write a program to take an image in the current directory and save its gray scale to an output location
-imageName = input("Enter image name:")
+# imageName = input("Enter image name:")
 
-img = cv2.imread(f"./{imageName}", 0)
+# img = cv2.imread(f"./{imageName}", 0)
 
-outputName = "gray_" + imageName
+# outputName = "gray_" + imageName
 
-cv2.imwrite(f"./output/{outputName}", img)
+# cv2.imwrite(f"./output/{outputName}", img)
+
+# cv2.imshow("Image", img)
+
+# cv2.waitKey(0)
+
+# cv2.destroyAllWindows()
+
+
+img = cv2.imread("./image-sample1.webp")
+# img = cv2.flip(img, 0)  # flip vertically
+# img = cv2.flip(img, 1)  # flip horizontally
+# img = cv2.flip(img, -1)  # flip horizontally and vertically
 
 cv2.imshow("Image", img)
 
